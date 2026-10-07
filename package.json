@@ -1,0 +1,30 @@
+{
+  "name": "jslt-language-server",
+  "version": "0.3.0",
+  "description": "Language server (LSP) for JSLT: diagnostics, completion, hover docs and formatting, powered by jslt-js",
+  "license": "Apache-2.0",
+  "author": "Anton Kraev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amkraev697642/jslt-language-server.git"
+  },
+  "homepage": "https://github.com/amkraev697642/jslt-language-server#readme",
+  "bugs": {
+    "url": "https://github.com/amkraev697642/jslt-language-server/issues"
+  },
+  "keywords": ["jslt", "lsp", "language-server", "json"],
+  "type": "module",
+  "bin": {
+    "jslt-language-server": "./bin/jslt-language-server.js"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "files": ["bin", "src", "README.md", "LICENSE"],
+  "dependencies": {
+    "jslt-editor": "^0.3.0",
+    "jslt-js": "^0.3.0",
+    "vscode-languageserver": "^10.1.2",
+    "vscode-languageserver-textdocument": "^1.0.15"
+  }
+}
